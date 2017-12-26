@@ -4,18 +4,18 @@
 
 ### psql (PostgreSQL interactive terminal)
 
-#### Abrindo psql
+#### Starting psql
 `psql -U postgres`
 
 - h - Host
-- p - Porta
-- U - Define usuário
+- p - Port
+- U - User
 
 #### Comandos dentro do psql
-- \q - Sair
-- \l - Lista os bancos de dados
-- \c <db> - Conecta ao banco especificado
-- \d - Lista as tabelas do banco selecionado
+- \q - Quit
+- \l - Returns database list
+- \c <db> - Connects to the specified database
+- \d - Returns table list from the current connected database
 
 ### Backup 
 
@@ -42,7 +42,7 @@ docker run --rm --network <network> \
 Backing up all collections using docker [mongobackup-s3](https://github.com/firstandthird/mongobackup-s3) image:
 
 ```
-docker run --rm --network <network> --link mongo:mongo \
+docker run --rm --network <network> \
     --env AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> \
     --env AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> \
     --env S3BUCKET=<S3BUCKET> \
