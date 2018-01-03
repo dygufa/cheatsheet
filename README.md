@@ -42,6 +42,13 @@ docker run --rm --network <network> \
 
 ## MongoDB
 
+### mongo 
+
+- show dbs - List all dbs
+- use <DB> - Set DB for use and create the DB if it doesn't already exist 
+- show collections - List all collections for the selected DB
+- db.<COLLECTION>.find() - List all entries for a collection
+
 ### Backup
 
 Backing up all collections using docker [mongobackup-s3](https://github.com/firstandthird/mongobackup-s3) image:
