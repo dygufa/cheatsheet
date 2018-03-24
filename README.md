@@ -21,6 +21,10 @@
 - \l - Returns database list
 - \c <db> - Connects to the specified database
 - \d - Returns table list from the current connected database
+- `CREATE ROLE username WITH LOGIN PASSWORD 'password';` - Creates an user
+- `DROP USER username;` - Deletes an user
+- `CREATE DATABASE db` - Creates a database
+- `GRANT ALL PRIVILEGES ON DATABASE db TO username;` - Grants all privileges to an user
 
 ### Backup 
 
